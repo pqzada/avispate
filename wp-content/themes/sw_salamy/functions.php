@@ -61,3 +61,7 @@ if(! ya_options()->getCpanelValue('revslide_active')){
 	}
 	
 }
+
+
+/* Disable WordPress Admin Bar for all users but admins. */
+show_admin_bar(false);
