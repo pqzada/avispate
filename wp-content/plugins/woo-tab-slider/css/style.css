@@ -1,0 +1,18 @@
+.spt-wrap  .tab-content > .tab-pane{
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	display: block;
+	transition: all ease-in-out 1s;
+	-webkit-transition: all ease-in-out 1s;
+	-ms-transition: all ease-in-out 1s;
+}
+.spt-wrap  .tab-content > .tab-pane.active{
+	height: auto;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	overflow: visible;
+}
+
+

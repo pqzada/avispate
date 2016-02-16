@@ -1,0 +1,21 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Fixed (1170px)
+#grid > .core(@gridColumnWidth1200, @gridGutterWidth1200);
+
+// Fluid (1170px)
+#grid > .fluid(@fluidGridColumnWidth1200, @fluidGridGutterWidth1200);
+
+// Reset utility classes due to specificity
+[class*="span"].hide,
+.row-fluid [class*="span"].hide {
+  display: none;
+}
+
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}

@@ -1,0 +1,131 @@
+/**********************************************************************
+ * UberMenu Skin: Black & White
+ *
+ * UberMenu - WordPress Mega Menu Plugin http://wpmegamenu.com
+ * Copyright: Chris Mavricos, SevenSpark http://sevenspark.com
+ **********************************************************************/
+/* Menu Bar */
+
+/* Top Level Items */
+#megaMenu ul.megaMenu > li.menu-item > a,
+#megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator,
+.megaMenuToggle {
+	color: #a8a8a8;
+    font-size: 18px;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+/* Top Level Menu Item Titles */
+#megaMenu ul.megaMenu > li.menu-item > a span.wpmega-link-title,
+#megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator span.wpmega-link-title {
+  text-transform: uppercase;
+  text-shadow: none;
+}
+/* Top Level Items - Hover */
+
+/* Top Level Items Title - Hover */
+#megaMenu ul.megaMenu > li.menu-item:hover > a span.wpmega-link-title,
+#megaMenu ul.megaMenu > li.menu-item:hover > span.um-anchoremulator span.wpmega-link-title,
+#megaMenu ul.megaMenu > li.menu-item > a:hover span.wpmega-link-title,
+#megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator:hover span.wpmega-link-title,
+#megaMenu ul.megaMenu > li.menu-item.megaHover > a span.wpmega-link-title,
+#megaMenu ul.megaMenu > li.menu-item.megaHover > span.um-anchoremulator span.wpmega-link-title {
+  text-shadow: none;
+}
+/* Top Level Items - Current Item */
+#megaMenu ul.megaMenu > li.menu-item.current-menu-item > a,
+#megaMenu ul.megaMenu > li.menu-item.current-menu-parent > a,
+#megaMenu ul.megaMenu > li.menu-item.current-menu-ancestor > a {
+  color: #a8a8a8;
+}
+/* Sub Menu Container Style */
+#megaMenu ul.megaMenu > li.menu-item.ss-nav-menu-mega > ul.sub-menu-1,
+#megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg ul.sub-menu {
+
+}
+/* Horizontal Sub Menus */
+#megaMenu.megaMenuHorizontal ul.megaMenu > li.menu-item.ss-nav-menu-mega > ul.sub-menu-1,
+#megaMenu.megaMenuHorizontal ul.megaMenu li.menu-item.ss-nav-menu-reg > ul.sub-menu {
+  border-top: none;
+}
+/* Sub Menu Columns */
+#megaMenu ul.megaMenu > li.menu-item.ss-nav-menu-mega > ul.sub-menu-1 > li.menu-item {
+  min-width: 150px;
+}
+
+/* Sub Menu Links & Fake Links */
+#megaMenu ul li.menu-item.ss-nav-menu-mega ul ul.sub-menu li.menu-item > a,
+#megaMenu ul li.menu-item.ss-nav-menu-mega ul ul.sub-menu li.menu-item > span.um-anchoremulator,
+#megaMenu ul ul.sub-menu li.menu-item > a,
+#megaMenu ul ul.sub-menu li.menu-item > span.um-anchoremulator {
+  color: #888888;
+  font-size: 12px;
+  text-shadow: 0px 1px 1px #ffffff;
+  background-color: transparent;
+}
+/* Sub Menu Link Hover */
+
+/* Top Level Search Bar */
+#megaMenu ul.megaMenu > li.menu-item > .wpmega-nonlink > form#searchform.ubersearch-v2 {
+  padding-top: 2px;
+}
+/* Highlight color */
+#megaMenu ul.megaMenu li.menu-item.ss-nav-menu-highlight > a,
+#megaMenu ul.megaMenu li.menu-item.ss-nav-menu-highlight > span.um-anchoremulator {
+  color: #4d90fe !important;
+}
+/* Image Spacing */
+#megaMenu .ss-nav-menu-with-img > a > .wpmega-link-title,
+#megaMenu .ss-nav-menu-with-img > a > .wpmega-link-description,
+#megaMenu .ss-nav-menu-with-img > a > .wpmega-item-description,
+#megaMenu .ss-nav-menu-with-img > span.um-anchoremulator > .wpmega-link-title,
+#megaMenu .ss-nav-menu-with-img > span.um-anchoremulator > .wpmega-link-description,
+#megaMenu .ss-nav-menu-with-img > span.um-anchoremulator > .wpmega-item-description {
+  padding-left: 25px;
+}
+.ss-nav-menu-with-img {
+  min-height: 16px;
+}
+/* Item Description */
+#megaMenu ul.megaMenu li.menu-item a span.wpmega-item-description,
+#megaMenu ul.megaMenu li.menu-item span.um-anchoremulator span.wpmega-item-description {
+  font-size: 9px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+/* Arrow Colors */
+#megaMenu ul.megaMenu li.menu-item.mega-with-sub > a:after,
+#megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a:after,
+#megaMenu ul.megaMenu li.menu-item.mega-with-sub > span.um-anchoremulator:after,
+#megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator:after {
+  border-top-color: #bbbbbb;
+}
+#megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > a:after,
+#megaMenu ul li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > span.um-anchoremulator:after {
+  border-left-color: #bbbbbb;
+}
+/* Vertical */
+#megaMenu.megaMenuVertical > ul > li.menu-item > a,
+#megaMenu.megaMenuVertical > ul > li.menu-item > span.um-anchoremulator {
+  background-color: #222222;
+}
+#megaMenu.megaMenuVertical ul li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > a:after,
+#megaMenu.megaMenuVertical ul li.menu-item.mega-with-sub > a:after,
+#megaMenu.megaMenuVertical ul li.menu-item.ss-nav-menu-mega > a:after,
+#megaMenu.megaMenuVertical ul li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > span.um-anchoremulator:after,
+#megaMenu.megaMenuVertical ul li.menu-item.mega-with-sub > span.um-anchoremulator:after,
+#megaMenu.megaMenuVertical ul li.menu-item.ss-nav-menu-mega > span.um-anchoremulator:after {
+  border-left-color: #bbbbbb;
+}
+#megaMenu.megaMenuVertical ul.megaMenu > li.menu-item.ss-nav-menu-mega > ul.sub-menu-1,
+#megaMenu.megaMenuVertical ul.megaMenu li.menu-item.ss-nav-menu-reg > ul.sub-menu {
+  border-left: none;
+}
+/* IE7 Hacks */
+#megaMenu.megaMenuHorizontal ul.megaMenu {
+  *border-bottom: none;
+}
+#megaMenu.megaMenuVertical ul.megaMenu {
+  *border-right: none;
+}

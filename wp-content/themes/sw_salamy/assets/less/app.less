@@ -1,0 +1,128 @@
+
+// load bootstrap.less included variables.less & mixins.less
+@import "app/_mega.less";
+@import "app/_search.less";
+@import "bootstrap/bootstrap.less";
+@import "font-awesome/font-awesome.less";
+@import "app/_menus.less";
+@import "app/_pages.less";
+@import "app/_shortcodes.less";
+@import "app/_thumbnails.less";
+@import "app/_widgets.less";
+@import "app/content.less";
+@import "app/_rtl.less";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+body { 
+	background: #fff;
+	color: @body-color;
+	font-size: 12px;
+	a{
+		color: @color;
+		&:hover{
+			color: @color;
+			text-decoration: none;
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+	
+	h1, h2, h3, h4, h5, h6{
+		margin: 0 0 10px;
+		font-family: inherit;
+	}
+	a{
+		outline: medium none !important;
+	}
+	input, textarea, button {
+		outline: medium none !important;
+		border: 1px solid @border-color;
+		margin-bottom: 10px;
+		.border-radius(4px);
+	}
+	img{
+		.img-responsive();
+	}
+	ul{
+		padding: 0;
+	}
+}
+/* Images in content post*/
+.thumbnail{
+	max-width: 100%;
+}
+.size-full {
+    width:100%;
+    height:auto;
+    margin:0 0 30px 0;
+}
+.alignleft {
+    float: left;
+    margin:0 15px 30px 0;
+    .rtl &{
+    	float: right;
+    	margin: 0 0 30px 15px;
+    }
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+.alignright {
+    float: right;
+    margin:0 0 30px 15px;
+    .rtl &{
+    	float: left;
+    	margin: 0 15px 30px 0;
+    }
+}
+.alignnone {
+    float: none;
+    display:block;
+    margin:0 0 30px 0;
+}
+
+p .size-full {
+    width: auto;
+    height:auto;
+    margin:5px 0 30px 0;
+}
+p .alignleft {
+    float: left;
+    margin:5px 15px 30px 0;
+    .rtl &{
+    	float: right;
+    	margin: 5px 0 30px 15px; 
+    }
+}
+p .aligncenter {
+    display: block;
+    margin: 5px auto 30px auto;
+}
+p .alignright {
+    float: right;
+    margin:5px 0 30px 15px;
+    .rtl &{
+     	float: left;
+     	margin: 5px 15px 30px 0;
+    }
+}
+p .alignnone {
+    float: none;
+    display:block;
+    margin:5px 0 30px 0;
+}
+figure .size-full{
+	margin: 0;
+}
+
+/*-------------------------------*/
+
+
+
+
+
+

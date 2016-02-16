@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+
+
+	<widgets>
+
+		<field name="sitetitle" type="text" default="" label="JGLOBAL_TITLE"
+			description="JFIELD_ALT_PAGE_TITLE_LABEL" filter="string" />
+
+		<field name="copyright_note" type="textarea" default=""
+			label="JGLOBAL_DESCRIPTION" description="JGLOBAL_SUBHEADING_DESC"
+			filter="string" />
+
+		<field name="googleFont" type="radio" class="btn-group" default="1"
+			label="TPL_PROTOSTAR_FONT_LABEL" description="TPL_PROTOSTAR_FONT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="googleFontName" class="" type="text" default="Open+Sans"
+			label="TPL_PROTOSTAR_FONT_NAME_LABEL" description="TPL_PROTOSTAR_FONT_NAME_DESC" />
+	</widgets>
+
+</theme>

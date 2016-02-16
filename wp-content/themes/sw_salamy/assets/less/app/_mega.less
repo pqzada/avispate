@@ -1,0 +1,135 @@
+.megaMenu{
+	> li{
+		border-left: 1px solid #1d1d1d;
+		border-right: 1px solid #1d1d1d;
+		min-height: 26px;
+		+li{border-right: 1px solid #1d1d1d; border-left: 0;}
+		&.menu-item-has-children >a{
+			&:after{
+				content: "\f107";
+				font-family: FontAwesome;
+				display: inline-block;
+				margin: 0 0 0 10px;
+				color: #555;
+			}
+		}
+		> a{
+			min-height: 26px;
+		}
+		&:hover{
+			> a{
+				
+				color: #fff !important;
+				&:after{
+					color: #fff;
+				}
+			}
+		}
+		&.current-menu-item, &.current_page_item, &.current-menu-parent{
+			> a{
+				background: lighten(@color, 10) !important;
+				color: #fff !important;
+				&:after{
+					color: #fff;
+				}
+			}
+		}
+		> .sub-menu{
+			min-width: 180px !important;
+			padding: 0;
+			border-bottom: 1px solid @color !important;
+			.box-shadow( 1px 1px 3px #999) !important;
+			background: #fff;
+		}
+		&.ss-nav-menu-mega{
+			> .sub-menu{
+				> li{
+					>a, > span{
+						text-transform: uppercase;
+						font-size: 16px !important;
+					}
+					.sub-menu{
+						> li{
+							>a{
+								font-size: 14px !important;
+								padding: 5px 0 !important;
+								&:before{
+									content: "\f10c";
+									font-family: FontAwesome;
+									display: inline-block;
+									margin-right: 10px;
+									font-size: 10px;
+									color: #dadada;
+								}
+							}
+							&:hover{
+								>a{
+									color: @color !important;
+									&:before{
+										color: @color;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.ss-nav-menu-reg{
+			> .sub-menu{
+				> li{
+					>a{
+						font-size: 14px !important;
+						padding: 7px 10px 7px 15px !important;
+						display: block;
+						position: relative;
+						&:before{
+							content:"";
+							background: lighten(@body-color, 20);
+							width: 5px;
+							position: absolute;
+							top: 0;
+							left: 0;
+							bottom: 0;
+						}	
+					}
+					+li{
+						border-top: 1px solid #d9d9d9;
+					}
+					&:hover{
+						a{
+							color: @color !important;
+							&:before{
+								background: @color;
+							}
+						}
+					}
+					&.current-menu-item, &.current_page_item, &.current-menu-parent{
+						> a{
+							color: @color !important;
+							&:before{
+								background: @color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.rtl{
+	#megaMenu ul.megaMenu{
+		> li{
+			float: right;
+			+li{
+				border-left: 1px solid #1d1d1d;
+				border-right: 0;
+			}
+			&.menu-item-has-children >a{
+				&:after{					
+					margin: 0 10px 0 0;					
+				}
+			}
+		}
+	}
+}
